@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import {Component} from 'react'
 
 import {RiArrowDropLeftLine, RiArrowDropRightLine} from 'react-icons/ri'
@@ -121,9 +122,7 @@ class PopularRestaurants extends Component {
           >
             <RiArrowDropLeftLine size={20} />
           </button>
-          <p testid="active-page-number" className="page-count">
-            {activePage}
-          </p>
+          <p className="page-count">{activePage}</p>
           <span
             className="page-count"
             style={{marginLeft: '5px', marginRight: '5px'}}
